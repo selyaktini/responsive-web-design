@@ -25,3 +25,4 @@ All projects in this repository are built by me while learning web development.
 
 ## ✏️ Author
 [El yaktini Sohayb](https://github.com/selyaktini)
+
