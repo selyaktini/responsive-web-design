@@ -1,0 +1,117 @@
+body {
+  background-color: #f0f4f8;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Container for header elements (title + description) */
+header {
+  text-align: center;
+  padding: 40px 20px 20px; /* space from top and bottom */
+  background: #f0f4f8;
+}
+
+h1#title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #004080;
+}
+
+p#description {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Form styling */
+form#survey-form {
+  background: white;
+  max-width: 480px;
+  margin: 30px auto 60px;  /* centered horizontally with margin top and bottom */
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* The rest remains mostly same */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #004080;
+  box-shadow: 0 0 8px rgba(0, 64, 128, 0.3);
+}
+
+p {
+  font-weight: 700;
+  color: #004080;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+label > input[type="radio"],
+label > input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.1);
+  accent-color: #004080;
+  vertical-align: middle;
+}
+
+label {
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+button#submit {
+  background-color: #004080;
+  color: white;
+  font-weight: 700;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.25s ease;
+}
+
+button#submit:hover {
+  background-color: #003060;
+}
+
+@media (max-width: 520px) {
+  form#survey-form {
+    padding: 25px 20px;
+  }
+}
